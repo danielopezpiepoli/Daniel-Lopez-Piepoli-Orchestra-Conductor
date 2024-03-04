@@ -1,0 +1,76 @@
+/* Custom properties/variables  */
+:root {
+    --main-white: #f0f0f0;
+  /*  --main-red: #be3144;*/
+  /*  --main-blue: #45567d;*/
+    --main-gray: #303841;
+    --main-beige: rgb(241, 235, 221);
+    --main-beige-light: rgb(247, 245, 238);
+}
+
+.gallery-page-gallery-section{
+    text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-beige-light);
+}
+
+.gallery-page-gallery-header{
+  max-width: 640px;
+  margin:-5rem auto 6rem auto;
+/*  border-bottom: 0.2rem solid var(--main-beige-light);*/
+  font-weight: 100;
+  color: black;
+}
+
+@media (max-width: 28.75em) {
+    .gallery-page-gallery-header {
+      font-size: 4rem;
+    }
+  }
+  
+
+/* "Automagic" image grid using no media queries */
+
+.gallery-page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  
+  @media (max-width: 30.625em) {
+    .gallery-page-gallery-section {
+      padding: 6rem 1rem;
+    }
+  
+    .gallery-page-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+.yotube-channel-link{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: -5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.youtube-channel-link {
+  font-size: 2rem;
+  text-shadow: 0.5px 0.5px 0.5px #1f1f1f;
+  transition: transform 0.3s ease-out;
+  color: white;
+}
+
+.youtube-channel-link:hover {
+  transform: translateY(8px);
+}

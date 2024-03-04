@@ -1,0 +1,129 @@
+/*General management section*/
+.contact-management-section{
+    padding: 5rem 2rem;
+    background-color: var(--main-beige-light);
+}
+
+.contact-management-section-header, .management-header, .management-details-info {
+    vertical-align: middle;
+    align-items: center;
+    align-self: center;
+    font-family: 'Poppins';
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-management-section-header{
+    font-weight: 100;
+}
+
+.management-header{
+    font-weight: 200;
+    margin-top: 1.5rem;
+}
+
+.management-details-info{
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.management-email{
+    color: black;
+}
+
+/*Contact Form section*/
+.contact-form-section{
+    background-color: var(--main-beige);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 28.75em) {
+    .contact-form-section {
+      width: 90%;
+    }
+  }
+
+.contact-form-header{
+    font-family: 'Poppins';
+    font-weight: 200;
+    margin-left: 20px;
+    padding: 3rem;
+    padding-top: 3rem;
+    align-items: center;
+    text-align: left;
+}
+
+form{
+    width: 80vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset{
+    border: none;
+    padding: 1.5rem 0;
+}
+
+fieldset:last-of-type{
+    border-bottom: none;
+}
+
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input, textarea{
+    margin: auto;
+    width: 100%;
+    min-height: 2em;
+}
+
+@media (max-width: 30.625em) {
+    input, textarea {
+      width: 100%;
+    }
+
+    label{
+        display: block;
+        margin: 0.5rem 0;
+    }
+  
+    .contact-form-header{
+        text-align: center;
+        /*to cancel the General margin for big screens*/
+        margin-left: auto;
+    }
+}
+
+
+input{
+    margin-top: 0.2rem;
+}
+
+input[type="submit"] {
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.5rem;
+    min-width: 300px;
+    background-color: var(--main-gray-light-light);
+    border: solid 0.5px black;
+    color: black;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--main-gray-light-dark);
+}
+
+
+
+/*FOOTER SMALL SCREEN/MOBILE*/
+

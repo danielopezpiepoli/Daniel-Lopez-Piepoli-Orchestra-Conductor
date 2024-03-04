@@ -1,0 +1,159 @@
+/*NO TOCAR start*/
+h2{
+    font-family: 'Poppins';;
+  }
+  
+  .bio-page-section{
+    padding: 5rem 2rem;
+    background-color: var(--main-beige-light);
+  }
+  
+  .bio-page-grid{
+    width: 90%;
+    margin: auto;
+    display: flexbox;
+    -webkit-box-direction: flex-end;
+  }
+  /*NO TOCAR end*/
+  
+  .bio-page-grid-photo{
+    width: 0.5vh;
+    max-width: 1280px;
+  }
+  
+  
+  img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    overflow-x: "";
+    overflow-y: "";
+    vertical-align: middle;
+  }
+  
+  @media (max-width: 30.625em) {
+    .bio-page-section {
+      padding: 6rem 1rem;
+    }
+  
+    .bio-page-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
+  /*BIOGRAPHY SECTION*/
+  .box{
+    float: right; 
+    margin: 5px;
+    width: 90%;
+  }
+  
+  .box > img{
+    max-height: 700px;
+    gap: 4rem;
+  }
+  
+  .bio-page-biography-container{
+    width: 85%;
+    margin: 5rem auto auto auto;
+    text-align: justify;
+    line-height: 1.8;
+    object-fit: cover;
+  }
+  
+  .center{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 47%;
+   padding-left: 2rem;
+   padding-bottom: 2rem;
+  }
+  
+  /*Mobile Screen: iPhone*/
+  @media (max-width: 460px){
+    .center{
+      position: initial;
+      display: contents; 
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .box > img{
+      max-height: 100vh;
+      max-width: 100%;
+      margin: 5rem auto 1rem auto;
+      
+    }
+  }
+  
+  /*Mobile Screen*/
+  @media (max-width: 600px){
+    .center{
+      position: initial;
+      display: contents; 
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .box > img{
+      /*max-height: 90vh;
+      max-width: 100%;*/
+      margin: 5rem auto 1rem auto;
+    }
+  }
+
+  /*For iPad Surface screens*/
+  /*@media (min-width: 760px), (max-width: 1024px){
+    .box > img{
+      max-height: 100vh;
+      max-width: 85%;
+    }
+  }*/
+
+  /*For PC screens*/
+  /*@media (min-width: 1280px), (max-width: 1400px){
+    .box > img{
+      max-height: 100vh;
+      max-width: 85%;
+    }
+  }*/
+  
+  /*GUEST CONDUCTING SECTION*/
+  
+  .bio__guest-conducting{
+    padding: 1rem 2rem;
+    background-color: var(--main-beige-light);
+  }
+  
+  .bio-page__orchestra-logo{
+    align-items: center;    
+    height: 200px;
+    width: 200px;
+    max-width: 1280px;
+    object-fit: cover;
+  }
+  
+  .orchestra-grid{
+    /*
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto; */
+    /*margin: 5rem auto auto auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    -webkit-box-direction: flex-end;
+    width: 50%;
+    max-width: 1280px;*/
+    padding-top: 50px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 0.5em;
+    overflow: hidden;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+  }
